@@ -1,0 +1,32 @@
+.vcenter{
+  display: flex;
+  align-items: center;
+}
+
+.hcenter{
+  text-align: center;
+}
+
+h1.page-header {
+  color:$theme-color;
+  font-weight: bold;
+}
+
+.bottomliner {
+  padding-bottom: 10px;
+  border-bottom: 1px solid $gray-light;
+}
+
+.well {
+  background-color: #FFF;
+  border: none;
+
+  .block-facetapi h2.block-title{
+    background-color: $theme-color;
+    color: #FFF;
+    font-size: $font-size-large;
+    padding: 10px 5px;
+    text-align: center;
+
+  }
+}

@@ -1,0 +1,27 @@
+#navbar.navbar-default {
+  background-color: #ffffff;
+  border: none;
+
+  .logo-container {
+    border-right: 2px solid $gray;
+
+  }
+
+  .search {
+    margin-left: -15px;
+  }
+
+  #block-fboauth-login{
+    text-align: right;
+  }
+
+}
+
+ul#superfish-1{
+  float:right;
+
+  li{
+    margin-right: 10px;
+
+  }
+}

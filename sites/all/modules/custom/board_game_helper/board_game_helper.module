@@ -1,0 +1,79 @@
+<?php
+
+/**
+ * Implements hook_form_alter().
+ */
+function board_game_helper_form_alter(&$form, &$form_state, $form_id) {
+  global $theme;
+  if($form_id == 'board_game_node_form'){
+    drupal_add_js(drupal_get_path('module', 'board_game_helper') . '/js/board_game_helper.js');
+  }
+  if($form_id == 'board_game_node_form' && $theme == 'stb_bs'){
+    array_unshift($form['#theme'], 'stb_bs_board_game_form');
+    //dpm($form, $form_id);
+  }
+}
+
+function board_game_helper_theme(){
+  $themes = array(
+    'stb_bs_board_game_form' => array(
+      'template' => 'stb_bs_board_game_form',
+      'render element' => 'form',
+    ),
+  );
+  return $themes;
+}
+
+/**
+ * Implements hook_page_alter().
+ */
+function board_game_helper_page_alter(&$page) {
+
+}
+
+
+function board_game_helper_preprocess_page(&$vars){
+  if(isset($vars['node']) && $vars['node']->type == 'board_game'){
+    if(preg_match("!^node/[0-9]*$!",current_path())){
+      array_unshift($vars['theme_hook_suggestions'], 'page__node__' . $vars['node']->type);
+      $_bg = $vars['node'];
+      $bg = new BoardGameHelper($_bg);
+
+      $vars['user_photo'] = image_style_url('thumbnail',$bg->getGameOwnerHelper()->getPhotoUrl());
+      $vars['game_owner'] = $bg->getGameOwnerHelper()->getUser();
+      $vars['fbid'] = $bg->getGameOwnerHelper()->getFBId();
+      $vars['game_owner']->location_city = implode(", ", $bg->getGameOwnerHelper()->getLocationCity());
+
+
+      $vars['game_description'] = $bg->getBoardGameWrapper()->field_game_description->value()['value'];
+      $vars['game_category'] = $bg->getBoardGameWrapper()->field_game_category->value()->name;
+      $vars['number_players_from'] = $bg->getBoardGameWrapper()->field_number_players->value()['from'];
+      $vars['number_players_to'] = $bg->getBoardGameWrapper()->field_number_players->value()['to'];
+      $vars['game_pieces'] = $bg->getBoardGameWrapper()->field_game_pieces->value()['value'];
+      $vars['game_owner']->contact_number = $bg->getGameOwnerHelper()->getUserWrapper()->field_contact_number->value();
+
+      $block = module_invoke('views','block_view','pickup_locations_map-block');
+      $vars['game_owner']->pickup_location = render($block['content']);
+
+      $vars['for_sale'] = $bg->isForSale();
+      $vars['for_rent'] = $bg->isForRent();
+      $vars['for_swap'] = $bg->isForSwap();
+
+      $vars['for_sale_price'] = number_format($bg->getBoardGameWrapper()->field_selling_price->value(),2);
+      $vars['for_rent_price'] = number_format($bg->getBoardGameWrapper()->field_rent->value(),2);
+      $vars['for_rent_deposit'] = number_format($bg->getBoardGameWrapper()->field_deposit_required->value(),2);
+      $vars['for_rent_terms'] = $bg->getBoardGameWrapper()->field_special_terms->value();
+      $vars['for_swap_terms'] = $bg->getBoardGameWrapper()->field_interested_to_swap_with->value()['value'];
+
+      //sets warning if incomplete profile
+      $bg->checkProfileComplete();
+
+    }else{
+      unset($vars['page']['header']);
+    }
+
+  }
+}
+
+
+

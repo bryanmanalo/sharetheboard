@@ -1,0 +1,10 @@
+name = FB Login Custom Helper
+description = FB Authentication Custom Helper
+package = Custom
+version = VERSION
+core = 7.x
+dependencies[] = fboauth
+
+
+
+

@@ -1,0 +1,10 @@
+name = Search Helper
+description = Search Helper
+package = Custom
+version = VERSION
+core = 7.x
+
+
+
+
+

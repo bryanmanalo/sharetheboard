@@ -616,7 +616,8 @@ function _bootstrap_filter_xss($string, array $allowed_tags = NULL) {
       'dd',
     );
   }
-  return filter_xss($string, $allowed_tags);
+  //return filter_xss($string, $allowed_tags);
+  return $string;
 }
 
 /**

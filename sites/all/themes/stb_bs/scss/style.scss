@@ -7,4 +7,10 @@
 // Base-theme overrides.
 @import 'overrides';
 
-
+@import 'component/_util';
+@import 'component/_header';
+@import 'component/_search';
+@import 'component/_slideshow';
+@import 'component/_board-game';
+@import 'component/_geolocation';
+@import 'component/_user';

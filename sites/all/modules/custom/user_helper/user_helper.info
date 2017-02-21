@@ -1,0 +1,10 @@
+name = User Helper
+description = User helper custom module
+package = Custom
+version = VERSION
+core = 7.x
+
+
+
+files[] = includes/UserHelper.inc
+scripts[] = user_helper.js

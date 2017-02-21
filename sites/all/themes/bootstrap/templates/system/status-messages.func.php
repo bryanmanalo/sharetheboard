@@ -66,7 +66,7 @@ function bootstrap_status_messages($variables) {
     if (count($messages) > 1) {
       $output .= " <ul>\n";
       foreach ($messages as $message) {
-        $output .= '  <li>' . _bootstrap_filter_xss($message) . "</li>\n";
+        $output .= '  <li>' . (!module_exists('devel') ? _bootstrap_filter_xss($message) : $message) . "</li>\n";
       }
       $output .= " </ul>\n";
     }

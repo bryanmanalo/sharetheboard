@@ -1,0 +1,12 @@
+name = Board Game Helper
+description = Search Helper
+package = Custom
+version = VERSION
+core = 7.x
+
+
+files[] = includes/BoardGameHelperUtil.inc
+files[] = includes/BoardGameHelper.inc
+
+
+

@@ -1,0 +1,116 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function user_helper_theme($existing, $type, $theme, $path) {
+  return array(
+    'stb_bs_profile_form' => array(
+      'template' => 'stb_bs_profile_form',
+      'render element' => 'form',
+    )
+  );
+}
+
+
+/**
+ * Implements hook_menu().
+ */
+function user_helper_menu(){
+  $items = array();
+
+  $items['my-boards'] = array(
+    'title' => 'My Boards',
+    'description' => '',
+    'type' => MENU_NORMAL_ITEM,
+    'page callback' => '_user_helper_my_boards',
+    'access callback' => TRUE,
+  );
+
+  return $items;
+}
+
+function _user_helper_my_boards(){
+  global $user;
+  drupal_goto('/user/' . $user->uid . '/my-boards');
+}
+
+/**
+ * Implements hook_user_view().
+ *
+ * Adds fb link
+ */
+function user_helper_user_view($account, $view_mode, $langcode) {
+  if(isset($account->fbid)){
+    $account->content['user_picture']['#markup'] = '<div><a target="_blank" href="https://facebook.com/' . $account->fbid .
+      '"><img src="' . image_style_url('medium',   $account->picture->uri) .
+      '"></a><a target="_blank" href="https://facebook.com/' . $account->fbid . '"><h3>View FB Profile</h3></a></div>';
+  }
+}
+
+/**
+ * Implements hook_user_load().
+ *
+ * Loads fbid on load user
+ */
+function user_helper_user_load($users) {
+  //add fbid on user_load
+
+  $result = db_select('fboauth_users', 'fbo')
+    ->fields('fbo', array('uid','fbid'))
+    ->condition('uid',array(array_keys($users)), 'IN')
+    ->execute();
+
+  $fboauth = $result->fetch();
+  if(!empty($fboauth)){
+    $users[$fboauth->uid]->fbid = $fboauth->fbid;
+  }
+}
+
+/**
+ * Implements hook_page_alter().
+ *
+ * If viewing a user profile, shows the board on the center, and profile on right
+ */
+function user_helper_page_alter(&$page) {
+  if(preg_match('!^user/[0-9]*$!',current_path())){
+    if(isset($page['secondary'])){
+      $page['secondary']['system_main'] = $page['content']['system_main'];
+      unset($page['content']['system_main']);
+    }else{
+      $block = module_invoke('views','block_view','my_boards-block_1');
+      $viewHTML = render($block['content']);
+      $page['sidebar_second'] = array(
+        '#sorted' => TRUE,
+        '#theme_wrappers' => array('region'),
+        '#region' => 'sidebar_second',
+        'system_main' => $page['content']['system_main'],
+      );
+      $page['content']['my_books'] = array(
+        '#markup' => $viewHTML
+      );
+      unset($page['content']['system_main']);
+    }
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function user_helper_form_alter(&$form, &$form_state, $form_id) {
+  if($form_id == 'user_profile_form'){
+    //array_unshift($form['#theme'], 'stb_bs_profile_form');
+  }
+
+}
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function user_helper_field_widget_form_alter(&$element, &$form_state, $context) {
+  if(isset($element['#field_name']) && $element['#field_name'] == 'field_pickup_locations'){
+    $element['googlemap']['#attached']['js'][0]['data'] = drupal_get_path('module','user_helper')
+        . '/js/geolocation_googlemaps_widget.js';
+  }
+  //dpm($element);
+}

@@ -1,0 +1,90 @@
+.node-board_game-form{
+
+
+  .form-item .image-widget .image-widget-data .input-group input.form-file.form-control{
+    //padding: 0px 12px;
+
+  }
+
+  .board-game-form {
+    .row {
+      margin-bottom: 20px;
+    }
+
+    .panel-body {
+      padding: 13px;
+    }
+  }
+}
+
+#block-views-board-game-photos-block{
+  img {
+    margin:auto;
+  }
+}
+
+#bg-owner{
+  background-color: $gray-lighter;
+  padding: 20px 0;
+
+  h1.page-header{
+    text-decoration: none;
+    border-bottom: none;
+    margin:0;
+    padding:0;
+  }
+
+  .user {
+    margin:0;
+    font-size: $font-size-h3;
+  }
+
+  .container{
+    .row{
+
+    }
+  }
+}
+
+#game-details{
+  .bg-detail{
+    padding: 0;
+
+    .bg-row-detail{
+      padding: 30px 0;
+    }
+  }
+
+  .price-card{
+    margin-top: 10px;
+
+    min-height: 200px;
+    width:80%;
+    border: 3px solid $gray-lighter;
+    background-color: #fff;
+
+
+    .price-card-title{
+      min-height: 50px;
+      color: #fff;
+      padding: 10px 15px;
+
+      background-color: $theme-color;
+      font-size: $font-size-h3;
+
+      .price-card-price{
+        float:left;
+      }
+      .price-card-type{
+        float:right;
+      }
+    }
+
+    .price-card-body{
+      padding: 10px 15px;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * Implements hook_user_presave().
+ */
+function fblogin_helper_fboauth_user_presave(&$edit, $fbuser) {
+  $pass = _fblogin_helper_genpass();
+  if(!array_key_exists('pass', $edit)){
+    $edit['pass'] = $pass;
+  }
+}
+
+function _fblogin_helper_genpass(){
+  $pass = '';
+  $length = 8;
+  $allowable_characters = 'abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789!#$%&()*+,-./:;<=>?@[]^_{|}~';
+
+  // Zero-based count of characters in the allowable list:
+  $len = strlen($allowable_characters) - 1;
+
+  // Loop the number of times specified by $length.
+  for ($i = 0; $i < $length; $i++) {
+    // Each iteration, pick a random character from the
+    // allowable string and append it to the password:
+    $pass .= $allowable_characters[mt_rand(0, $len)];
+  }
+
+  return $pass;
+}
+
+/**
+ * Implements hook_page_alter().
+ */
+function fblogin_helper_page_alter(&$page) {
+  //sets the views block as an available variable in tpl file
+  $block = block_load('views', '4b693386ec754134225cbb56853b8f9c');
+  $block = _block_get_renderable_array(_block_render_blocks(array($block)));
+  $block = drupal_render($block);
+  $page['search_block'] = $block;
+
+  //render facebook login moudle block
+  $block = block_load('fboauth', 'login');
+  $block = _block_get_renderable_array(_block_render_blocks(array($block)));
+  $block = drupal_render($block);
+  $page['fb_block'] = $block;
+}
+
+function fblogin_helper_fboauth_action__connect($variables) {
+  $action = $variables['action'];
+  $link = $variables['properties'];
+  $url = url($link['href'], array('query' => $link['query']));
+  $link['attributes']['class'][] = 'facebook-action-connect';
+  $link['attributes']['rel'] = 'nofollow';
+  $attributes = isset($link['attributes']) ? drupal_attributes($link['attributes']) : '';
+  $title = isset($link['title']) ? check_plain($link['title']) : '';
+  $src = ($GLOBALS['is_https'] ? 'https' : 'http') . '://www.facebook.com/images/fbconnect/login-buttons/connect_light_medium_short.gif';
+  return '<span>Log in/Sign up&nbsp;</span><a ' . $attributes . ' href="' . $url . '"><img src="' . $src . '" alt="' . $title . '" /></a>';
+}

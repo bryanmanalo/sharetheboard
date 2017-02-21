@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * Implements hook_form_alter().
+ */
+function search_helper_form_alter(&$form, &$form_state, $form_id) {
+  if($form_id == 'views_exposed_form' &&  $form['#id'] == 'views-exposed-form-board-game-search-page-page'){
+    $form['search_api_views_fulltext']['#attributes'] = array(
+      'placeholder' => 'Search for Board Games'
+    );
+    //$form['submit']['#type'] = 'hidden';
+
+  }
+  if($form_id == 'search_api_ranges_block_slider_view_form_field_rent' ||
+      $form_id == 'search_api_ranges_block_slider_view_form_field_deposit_required'  ||
+    $form_id == 'search_api_ranges_block_slider_view_form_field_selling_price') {
+
+    unset($form['range-from']['#title']);
+    unset($form['range-to']['#title']);
+  }
+}
+
+/**
+ * Implements hook_page_alter().
+ */
+function search_helper_page_alter(&$page) {
+  $query = drupal_get_query_parameters();
+  if(isset($query['search_api_views_fulltext'])){
+    $search_key = $query['search_api_views_fulltext'];
+    drupal_set_title("Results for '" . $search_key . "'");
+  }
+}
