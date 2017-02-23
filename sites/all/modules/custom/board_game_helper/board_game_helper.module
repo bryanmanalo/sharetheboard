@@ -40,6 +40,7 @@ function board_game_helper_preprocess_page(&$vars){
       $bg = new BoardGameHelper($_bg);
 
       $vars['user_photo'] = image_style_url('thumbnail',$bg->getGameOwnerHelper()->getPhotoUrl());
+      $vars['user_photo_anonymous'] = '/' . drupal_get_path('theme','stb_bs') . '/images/anonymous.jpg';
       $vars['game_owner'] = $bg->getGameOwnerHelper()->getUser();
       $vars['fbid'] = $bg->getGameOwnerHelper()->getFBId();
       $vars['game_owner']->location_city = implode(", ", $bg->getGameOwnerHelper()->getLocationCity());
@@ -62,11 +63,18 @@ function board_game_helper_preprocess_page(&$vars){
       $vars['for_sale_price'] = number_format($bg->getBoardGameWrapper()->field_selling_price->value(),2);
       $vars['for_rent_price'] = number_format($bg->getBoardGameWrapper()->field_rent->value(),2);
       $vars['for_rent_deposit'] = number_format($bg->getBoardGameWrapper()->field_deposit_required->value(),2);
-      $vars['for_rent_terms'] = $bg->getBoardGameWrapper()->field_special_terms->value();
+      $vars['for_rent_terms'] = $bg->getBoardGameWrapper()->field_special_terms->value()['value'];
       $vars['for_swap_terms'] = $bg->getBoardGameWrapper()->field_interested_to_swap_with->value()['value'];
 
+      global $base_url;
+
+      $vars['fbshare_path'] = $base_url . '/' . drupal_get_path_alias('node/' . $vars['node']->nid);
       //sets warning if incomplete profile
       $bg->checkProfileComplete();
+
+      //dpm($vars['node']);
+      //dpm($vars);
+      //dpm(reset($vars['page']['content']['system_main']['nodes']));
 
     }else{
       unset($vars['page']['header']);

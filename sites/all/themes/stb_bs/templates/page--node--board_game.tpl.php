@@ -104,14 +104,14 @@
 
     </div>
 
-    <div class="col-lg-4 search">
+    <div class="col-lg-5 search">
       <?php if (!empty($page['search_block'])): ?>
         <?php print $page['search_block']; ?>
       <?php endif; ?>
     </div>
 
 
-    <div class="col-lg-6">
+    <div class="col-lg-5">
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <div class="navbar-collapse collapse" id="navbar-collapse">
           <nav role="navigation">
@@ -154,7 +154,7 @@
             <div class="col-lg-3 hcenter">
               <?php if(!empty($user_photo)): ?>
                 <?php if(user_is_anonymous()): ?>
-                  <img src="<?php print $user_photo ?>" />
+                  <img src="<?php print $user_photo_anonymous ?>" />
                 <?php else: ?>
                   <a href="/user/<?php print $game_owner->uid; ?>"><img src="<?php print $user_photo ?>" /></a>
                 <?php endif; ?>
@@ -166,15 +166,33 @@
               </h1>
               <div class="clearfix"></div>
               <?php if(user_is_anonymous()): ?>
-                <span class="user">by&nbsp;</span><strong class="user"><?php print check_plain($game_owner->name); ?></strong>
+                <span class="user">by&nbsp;</span><strong class="user">Anonymous user (Login to view)</strong>
               <?php else: ?>
                 <span class="user">by&nbsp;</span>
                 <a href="/user/<?php print $game_owner->uid; ?>">
                   <strong class="user"><?php print check_plain($game_owner->name); ?></strong>
                 </a>
               <?php endif; ?>
-              <div class="clearfix"></div>
-              <span><?php print check_plain($game_owner->location_city); ?></span>
+              <?php if($game_owner->location_city): ?>
+                <div class="clearfix"></div>
+                <span><?php print check_plain($game_owner->location_city); ?></span>
+              <?php endif; ?>
+              <?php if($fbshare_path): ?>
+                <div class="clearfix"></div>
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+                    fjs.parentNode.insertBefore(js, fjs);
+                  }(document, 'script', 'facebook-jssdk'));</script>
+
+                <!-- Your share button code -->
+
+                <div class="fb-share-button" data-size="large" data-href="<?php print $fbshare_path; ?>" data-layout="button" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php print urlencode($fbshare_path); ?>&amp;src=sdkpreparse">Share</a></div>
+              <?php endif; ?>
+
             </div>
           </div>
           <div class="col-lg-4">
@@ -247,18 +265,20 @@
               <h3>Owner Details</h3>
             </div>
             <div class="col-lg-9">
+              <?php if(isset($game_owner->name) && !user_is_anonymous()): ?>
               <div>
                 <strong>Name:</strong>
                 <span><?php print check_plain($game_owner->name); ?></span>
               </div>
               <div class="clearfix"></div>
-              <?php if(isset($game_owner->contact_number)): ?>
+              <?php endif; ?>
+              <?php if(isset($game_owner->contact_number) && !user_is_anonymous()): ?>
               <div>
                 <strong>Contact Number:</strong>
                 <span><?php print check_plain($game_owner->contact_number); ?></span>
               </div>
               <?php endif; ?>
-              <?php if(isset($game_owner->contact_number)): ?>
+              <?php if(isset($game_owner->location_city)): ?>
                 <div>
                   <strong>Pickup Location City:</strong>
                   <span><?php print check_plain($game_owner->location_city); ?></span>
@@ -278,70 +298,84 @@
           <?php endif; ?>
         </div>
         <div class="col-lg-4">
-          <?php if($for_sale): ?>
-          <div class="price-card">
-            <div class="price-card-title">
-              <div class="price-card-price">P<?php print $for_sale_price; ?></div>
-              <div class="price-card-type">For Sale</div>
-            </div>
-            <div class="price-card-body">
-              <?php if(isset($game_owner->contact_number) && !user_is_anonymous()): ?>
+          <div class="price-card-group">
+            <div class="price-card">
+              <div class="price-card-title">
+                <div class="price-card-type">Contact Owner</div>
+              </div>
+              <div class="price-card-body">
+                <?php if(isset($game_owner->contact_number) && !user_is_anonymous()): ?>
                 <div>
                   <strong>Contact Number:</strong>
                   <span><?php print check_plain($game_owner->contact_number); ?></span>
                 </div>
-                <div class="clearfix"></div>
-              <?php endif; ?>
-            </div>
-          </div>
-          <?php endif; ?>
-          <?php if($for_rent): ?>
-          <div class="price-card">
-            <div class="price-card-title">
-              <div class="price-card-price">P<?php print check_plain($for_rent_price); ?></div>
-              <div class="price-card-type">For Rent</div>
-            </div>
-            <div class="price-card-body">
-              <?php if(isset($for_rent_deposit)): ?>
-              <div>
-                <strong>Deposit Required:</strong>
-                <span><?php print check_plain($for_rent_deposit); ?></span>
-              </div>
-              <div class="clearfix"></div>
-              <?php endif; ?>
-              <?php if(isset($game_owner->contact_number) && !user_is_anonymous()): ?>
-              <div>
-                <strong>Contact Number:</strong>
-                <span><?php print check_plain($game_owner->contact_number); ?></span>
-              </div>
-              <div class="clearfix"></div>
-              <?php endif; ?>
-            </div>
-          </div>
-          <?php endif; ?>
-          <?php if($for_swap): ?>
-          <div class="price-card">
-            <div class="price-card-title">
-              <div class="price-card-type">For Swap</div>
-            </div>
-            <div class="price-card-body">
-              <?php if(isset($game_owner->contact_number) && !user_is_anonymous()): ?>
-              <div>
-                <strong>Contact Number:</strong>
-                <span><?php print check_plain($game_owner->contact_number); ?></span>
-              </div>
-              <div class="clearfix"></div>
-              <?php endif; ?>
-              <?php if(isset($for_swap_terms)): ?>
+                <?php endif; ?>
+                <?php if(user_is_anonymous()): ?>
                 <div>
-                  <strong>Looking to swap with:</strong>
-                  <span><?php print check_markup(BoardGameHelperUtil::truncate($for_swap_terms , 500),'limited_format'); ?></span>
+                  <strong>View FB Profile:</strong>
+                  <div class="clearfix"></div>
+                  <span>Anonymous user (Login to view)</span>
+                </div>
+                <?php else: ?>
+                <div>
+                  <strong>View FB Profile:</strong>
+                  <div class="clearfix"></div>
+                  <span><a target="_blank" href="https://facebook.com/<?php print $fbid; ?>"><?php print check_plain($game_owner->name); ?></a></span>
+                </div>
+                <?php endif; ?>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+
+            <?php if($for_sale): ?>
+            <div class="price-card">
+              <div class="price-card-title">
+                <div class="price-card-price">P<?php print $for_sale_price; ?></div>
+                <div class="price-card-type">For Sale</div>
+              </div>
+            </div>
+            <?php endif; ?>
+            <?php if($for_rent): ?>
+            <div class="price-card">
+              <div class="price-card-title">
+                <div class="price-card-price">P<?php print check_plain($for_rent_price); ?></div>
+                <div class="price-card-type">For Rent</div>
+              </div>
+              <div class="price-card-body">
+                <?php if(isset($for_rent_deposit)): ?>
+                <div>
+                  <strong>Deposit Required:</strong>
+                  <span><?php print check_plain($for_rent_deposit); ?></span>
                 </div>
                 <div class="clearfix"></div>
-              <?php endif; ?>
+                <?php endif; ?>
+                <?php if(isset($for_rent_terms)): ?>
+                  <div>
+                    <strong>Special Terms:</strong>
+                    <span><?php print check_markup(BoardGameHelperUtil::truncate($for_rent_terms, 500),'limited_format'); ?></span>
+                  </div>
+                  <div class="clearfix"></div>
+                <?php endif; ?>
+              </div>
             </div>
+            <?php endif; ?>
+            <?php if($for_swap): ?>
+            <div class="price-card">
+              <div class="price-card-title">
+                <div class="price-card-type">For Swap</div>
+              </div>
+              <div class="price-card-body">
+                <?php if(isset($for_swap_terms)): ?>
+                  <div>
+                    <strong>Looking to swap with:</strong>
+                    <span><?php print check_markup(BoardGameHelperUtil::truncate($for_swap_terms , 500),'limited_format'); ?></span>
+                  </div>
+                  <div class="clearfix"></div>
+                <?php endif; ?>
+              </div>
+            </div>
+            <?php endif; ?>
           </div>
-          <?php endif; ?>
         </div>
       </div>
 

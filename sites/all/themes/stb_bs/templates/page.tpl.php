@@ -104,14 +104,14 @@
 
     </div>
 
-    <div class="col-lg-4 search">
+    <div class="col-lg-5 search">
       <?php if (!empty($page['search_block'])): ?>
         <?php print render($page['search_block']); ?>
       <?php endif; ?>
     </div>
 
 
-    <div class="col-lg-6">
+    <div class="col-lg-5">
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <div class="navbar-collapse collapse" id="navbar-collapse">
           <nav role="navigation">

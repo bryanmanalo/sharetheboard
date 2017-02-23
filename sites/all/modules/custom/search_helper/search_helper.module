@@ -8,8 +8,7 @@ function search_helper_form_alter(&$form, &$form_state, $form_id) {
     $form['search_api_views_fulltext']['#attributes'] = array(
       'placeholder' => 'Search for Board Games'
     );
-    //$form['submit']['#type'] = 'hidden';
-
+    $form['submit']['#value'] = 'Search';
   }
   if($form_id == 'search_api_ranges_block_slider_view_form_field_rent' ||
       $form_id == 'search_api_ranges_block_slider_view_form_field_deposit_required'  ||

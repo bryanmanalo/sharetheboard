@@ -26,6 +26,7 @@
 #bg-owner{
   background-color: $gray-lighter;
   padding: 20px 0;
+  min-height: 180px;
 
   h1.page-header{
     text-decoration: none;
@@ -44,6 +45,10 @@
 
     }
   }
+
+  .fb-share-button.fb_iframe_widget{
+    margin: 5px 0 0 0;
+  }
 }
 
 #game-details{
@@ -55,33 +60,33 @@
     }
   }
 
-  .price-card{
-    margin-top: 10px;
+  .price-card-group{
+    margin-top: -100px;
+    .price-card{
 
-    min-height: 200px;
-    width:80%;
-    border: 3px solid $gray-lighter;
-    background-color: #fff;
+      border: 3px solid $gray-lighter;
+      background-color: #fff;
 
 
-    .price-card-title{
-      min-height: 50px;
-      color: #fff;
-      padding: 10px 15px;
+      .price-card-title{
+        min-height: 50px;
+        color: #fff;
+        padding: 10px 15px;
 
-      background-color: $theme-color;
-      font-size: $font-size-h3;
+        background-color: $theme-color;
+        font-size: $font-size-h3;
 
-      .price-card-price{
-        float:left;
+        .price-card-price{
+          float:left;
+        }
+        .price-card-type{
+          float:right;
+        }
       }
-      .price-card-type{
-        float:right;
-      }
-    }
 
-    .price-card-body{
-      padding: 10px 15px;
+      .price-card-body{
+        padding: 10px 15px;
+      }
     }
   }
 }

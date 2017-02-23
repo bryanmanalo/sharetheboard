@@ -22,8 +22,4 @@
  * the view is modified.
  */
 ?>
-<?php
-  if(!empty($output)){
-    print "P" . number_format($output, 2);
-  }
-?>
+<?php print $output; ?>

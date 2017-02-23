@@ -9,6 +9,13 @@
 
   .search {
     margin-left: -15px;
+
+    input[type="text"] {
+      font-size: $font-size-h3;
+
+    }
+
+
   }
 
   #block-fboauth-login{

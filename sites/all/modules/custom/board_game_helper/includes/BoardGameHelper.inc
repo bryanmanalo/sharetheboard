@@ -45,7 +45,7 @@ class BoardGameHelper {
 
   function checkProfileComplete(){
     global $user;
-    if($this->boardGame->uid == $user->uid){
+    if($this->boardGame->uid == $user->uid && !user_is_anonymous()){
       $this->gameOwnerHelper->checkProfileComplete();
     }
   }
