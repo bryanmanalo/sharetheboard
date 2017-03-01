@@ -9845,28 +9845,58 @@ h1.page-header {
   background-color: #ffffff;
   border: none;
 }
-/* line 5, ../scss/component/_header.scss */
+@media (max-width: 767px) {
+  /* line 6, ../scss/component/_header.scss */
+  #navbar.navbar-default .navbar-collapse.collapse {
+    display: block;
+  }
+}
+/* line 11, ../scss/component/_header.scss */
 #navbar.navbar-default .logo-container {
   border-right: 2px solid #555555;
+  margin: auto;
 }
-/* line 10, ../scss/component/_header.scss */
+/* line 15, ../scss/component/_header.scss */
+#navbar.navbar-default .logo-container img {
+  margin: auto;
+}
+@media (max-width: 767px) {
+  /* line 21, ../scss/component/_header.scss */
+  #navbar.navbar-default .vcenter {
+    display: block;
+    border: none;
+  }
+}
+/* line 27, ../scss/component/_header.scss */
 #navbar.navbar-default .search {
   margin-left: -15px;
 }
-/* line 13, ../scss/component/_header.scss */
+/* line 30, ../scss/component/_header.scss */
 #navbar.navbar-default .search input[type="text"] {
   font-size: 24px;
 }
-/* line 21, ../scss/component/_header.scss */
+@media (max-width: 1199px) {
+  /* line 30, ../scss/component/_header.scss */
+  #navbar.navbar-default .search input[type="text"] {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 43, ../scss/component/_header.scss */
+  #navbar.navbar-default .search {
+    margin: auto;
+  }
+}
+/* line 48, ../scss/component/_header.scss */
 #navbar.navbar-default #block-fboauth-login {
   text-align: right;
 }
 
-/* line 27, ../scss/component/_header.scss */
+/* line 54, ../scss/component/_header.scss */
 ul#superfish-1 {
   float: right;
 }
-/* line 30, ../scss/component/_header.scss */
+/* line 57, ../scss/component/_header.scss */
 ul#superfish-1 li {
   margin-right: 10px;
 }
@@ -9879,7 +9909,13 @@ ul#superfish-1 li {
 #block-views-4b693386ec754134225cbb56853b8f9c .views-exposed-widgets #edit-search-api-views-fulltext-wrapper {
   width: 75%;
 }
-/* line 7, ../scss/component/_search.scss */
+@media (max-width: 767px) {
+  /* line 4, ../scss/component/_search.scss */
+  #block-views-4b693386ec754134225cbb56853b8f9c .views-exposed-widgets #edit-search-api-views-fulltext-wrapper {
+    width: 100%;
+  }
+}
+/* line 11, ../scss/component/_search.scss */
 #block-views-4b693386ec754134225cbb56853b8f9c .views-exposed-widgets #edit-search-api-views-fulltext-wrapper input#edit-search-api-views-fulltext {
   outline: none;
   border: 1px solid #eeeeee;
@@ -9887,58 +9923,60 @@ ul#superfish-1 li {
   background-color: #333333;
   color: #fff;
 }
-/* line 15, ../scss/component/_search.scss */
+/* line 19, ../scss/component/_search.scss */
 #block-views-4b693386ec754134225cbb56853b8f9c .views-exposed-widgets #edit-search-api-views-fulltext-wrapper input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px #333333 inset;
 }
-/* line 26, ../scss/component/_search.scss */
-#block-views-4b693386ec754134225cbb56853b8f9c .views-exposed-widgets .views-submit-button {
-  margin-left: -10px;
-}
-/* line 28, ../scss/component/_search.scss */
+/* line 32, ../scss/component/_search.scss */
 #block-views-4b693386ec754134225cbb56853b8f9c .views-exposed-widgets .views-submit-button #edit-submit-board-game-search-page {
   margin-top: 0px;
   float: left;
 }
 
-/* line 37, ../scss/component/_search.scss */
+/* line 41, ../scss/component/_search.scss */
 .block-facetapi .yui3-u.range-box {
   float: left;
 }
-/* line 40, ../scss/component/_search.scss */
+/* line 45, ../scss/component/_search.scss */
 .block-facetapi input.form-submit {
   float: left;
 }
-/* line 43, ../scss/component/_search.scss */
+@media (min-width: 992px) {
+  /* line 50, ../scss/component/_search.scss */
+  .block-facetapi input.form-submit {
+    float: none;
+  }
+}
+/* line 55, ../scss/component/_search.scss */
 .block-facetapi input[type="text"].form-control {
   width: 70px;
 }
-/* line 49, ../scss/component/_search.scss */
+/* line 61, ../scss/component/_search.scss */
 .block-facetapi ul.facetapi-facetapi-links .leaf a {
   color: #000000;
 }
 
-/* line 58, ../scss/component/_search.scss */
+/* line 70, ../scss/component/_search.scss */
 .view-id-board_game_search_page .row .col {
   padding: 10px;
 }
-/* line 60, ../scss/component/_search.scss */
+/* line 72, ../scss/component/_search.scss */
 .view-id-board_game_search_page .row .col .search-card {
   min-height: 350px;
   border: 3px solid #eeeeee;
   padding: 10px;
 }
-/* line 67, ../scss/component/_search.scss */
+/* line 79, ../scss/component/_search.scss */
 .view-id-board_game_search_page .row .col .search-card img {
   width: 100%;
 }
-/* line 70, ../scss/component/_search.scss */
+/* line 82, ../scss/component/_search.scss */
 .view-id-board_game_search_page .row .col .search-card .views-field-title a {
   font-size: 24px;
   color: #000;
   font-weight: bold;
 }
-/* line 75, ../scss/component/_search.scss */
+/* line 87, ../scss/component/_search.scss */
 .view-id-board_game_search_page .row .col .search-card .views-field-views-conditional-2 {
   color: #660079;
   font-size: 18px;
@@ -9980,6 +10018,21 @@ ul#superfish-1 li {
   font-size: 18px;
   color: #000;
 }
+@media (max-width: 767px) {
+  /* line 42, ../scss/component/_slideshow.scss */
+  .view-id-home_slideshow .views-bootstrap-carousel-plugin-style .item .views-field-nothing {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 48, ../scss/component/_slideshow.scss */
+  .view-id-home_slideshow .views-bootstrap-carousel-plugin-style .item .views-field-nothing {
+    position: absolute;
+    left: 500px;
+    top: 60px;
+    max-width: 450px;
+  }
+}
 
 /* line 10, ../scss/component/_board-game.scss */
 .node-board_game-form .board-game-form .row {
@@ -10013,29 +10066,41 @@ ul#superfish-1 li {
   margin: 0;
   font-size: 24px;
 }
-/* line 49, ../scss/component/_board-game.scss */
+@media (max-width: 767px) {
+  /* line 46, ../scss/component/_board-game.scss */
+  #bg-owner .container .row .vcenter {
+    display: block;
+  }
+}
+/* line 54, ../scss/component/_board-game.scss */
 #bg-owner .fb-share-button.fb_iframe_widget {
   margin: 5px 0 0 0;
 }
 
-/* line 55, ../scss/component/_board-game.scss */
+/* line 60, ../scss/component/_board-game.scss */
 #game-details .bg-detail {
   padding: 0;
 }
-/* line 58, ../scss/component/_board-game.scss */
+/* line 63, ../scss/component/_board-game.scss */
 #game-details .bg-detail .bg-row-detail {
   padding: 30px 0;
 }
-/* line 63, ../scss/component/_board-game.scss */
+@media (max-width: 767px) {
+  /* line 68, ../scss/component/_board-game.scss */
+  #game-details .bg-detail .vcenter {
+    display: block;
+  }
+}
+/* line 74, ../scss/component/_board-game.scss */
 #game-details .price-card-group {
   margin-top: -100px;
 }
-/* line 65, ../scss/component/_board-game.scss */
+/* line 76, ../scss/component/_board-game.scss */
 #game-details .price-card-group .price-card {
   border: 3px solid #eeeeee;
   background-color: #fff;
 }
-/* line 71, ../scss/component/_board-game.scss */
+/* line 82, ../scss/component/_board-game.scss */
 #game-details .price-card-group .price-card .price-card-title {
   min-height: 50px;
   color: #fff;
@@ -10043,17 +10108,23 @@ ul#superfish-1 li {
   background-color: #660079;
   font-size: 24px;
 }
-/* line 79, ../scss/component/_board-game.scss */
+/* line 90, ../scss/component/_board-game.scss */
 #game-details .price-card-group .price-card .price-card-title .price-card-price {
   float: left;
 }
-/* line 82, ../scss/component/_board-game.scss */
+/* line 93, ../scss/component/_board-game.scss */
 #game-details .price-card-group .price-card .price-card-title .price-card-type {
   float: right;
 }
-/* line 87, ../scss/component/_board-game.scss */
+/* line 98, ../scss/component/_board-game.scss */
 #game-details .price-card-group .price-card .price-card-body {
   padding: 10px 15px;
+}
+@media (max-width: 767px) {
+  /* line 74, ../scss/component/_board-game.scss */
+  #game-details .price-card-group {
+    margin-top: 0;
+  }
 }
 
 /* line 1, ../scss/component/_geolocation.scss */

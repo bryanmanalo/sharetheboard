@@ -75,68 +75,7 @@
 
 
 ?>
-<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-  <div class="<?php print $container_class; ?> vcenter">
-    <div class="col-lg-2 vcenter logo-container">
-
-        <div class="navbar-header">
-          <?php if ($logo): ?>
-            <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-              <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="image-responsive"/>
-            </a>
-          <?php endif; ?>
-
-          <?php if (!empty($site_name)): ?>
-            <!--a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a-->
-          <?php endif; ?>
-
-          <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-            <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-              <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button-->
-          <?php endif; ?>
-        </div>
-
-
-
-    </div>
-
-    <div class="col-lg-5 search">
-      <?php if (!empty($page['search_block'])): ?>
-        <?php print $page['search_block']; ?>
-      <?php endif; ?>
-    </div>
-
-
-    <div class="col-lg-5">
-      <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-        <div class="navbar-collapse collapse" id="navbar-collapse">
-          <nav role="navigation">
-            <?php if (!empty($primary_nav)): ?>
-              <?php print render($primary_nav); ?>
-            <?php endif; ?>
-            <?php if (!empty($secondary_nav)): ?>
-              <?php print render($secondary_nav); ?>
-            <?php endif; ?>
-            <?php if (!empty($page['navigation'])): ?>
-              <?php print render($page['navigation']); ?>
-            <?php endif; ?>
-          </nav>
-        </div>
-
-      <?php endif; ?>
-      <?php if (!empty($page['fb_block'])): ?>
-        <?php print $page['fb_block']; ?>
-      <?php endif; ?>
-    </div>
-
-
-
-  </div>
-</header>
+<?php include "header.inc"; ?>
 
 <?php print $messages; ?>
 
@@ -151,7 +90,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 vcenter">
-            <div class="col-lg-3 hcenter">
+            <div class="col-lg-3 col-xs-12 hcenter">
               <?php if(!empty($user_photo)): ?>
                 <?php if(user_is_anonymous()): ?>
                   <img src="<?php print $user_photo_anonymous ?>" />
@@ -160,7 +99,7 @@
                 <?php endif; ?>
               <?php endif; ?>
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-xs-12">
               <h1 class="page-header">
                 <?php print check_plain($node->title); ?>
               </h1>
@@ -208,23 +147,23 @@
     <div id="game-details">
 
       <div class="row">
-        <div class="col-lg-8 bg-detail">
+        <div class="col-lg-8 bg-detail col-xs-12">
           <?php if(!empty($game_description)): ?>
-            <div class="vcenter bottomliner bg-row-detail">
-              <div class="col-lg-3 hcenter">
+            <div class="vcenter bottomliner bg-row-detail col-xs-12">
+              <div class="col-lg-3 col-xs-12 hcenter">
                 <h3>Description</h3>
               </div>
-              <div class="col-lg-9">
+              <div class="col-lg-9 col-xs-12">
                 <?php print check_markup(BoardGameHelperUtil::truncate($game_description , 500),'limited_format'); ?>
               </div>
             </div>
           <?php endif; ?>
           <?php if(!empty($game_category) || !empty($number_players_from) || !empty($game_pieces)): ?>
-            <div class="vcenter bottomliner bg-row-detail">
-              <div class="col-lg-3 hcenter">
+            <div class="vcenter bottomliner bg-row-detail col-xs-12">
+              <div class="col-lg-3 col-xs-12 hcenter">
                 <h3>Details</h3>
               </div>
-              <div class="col-lg-9">
+              <div class="col-lg-9 col-xs-12">
                 <?php if(isset($game_category)): ?>
                 <div>
                   <strong>Category:&nbsp;</strong>
@@ -260,11 +199,11 @@
           <?php endif; ?>
           <?php if(!empty($game_owner->name) || !empty($game_owner->contact_number)
             || !empty($game_owner->location_city) || !empty($game_owner->pickup_location)): ?>
-          <div class="vcenter bg-row-detail">
-            <div class="col-lg-3 hcenter">
+          <div class="vcenter bg-row-detail col-xs-12">
+            <div class="col-lg-3 col-xs-12 hcenter">
               <h3>Owner Details</h3>
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-xs-12">
               <?php if(isset($game_owner->name) && !user_is_anonymous()): ?>
               <div>
                 <strong>Name:</strong>
@@ -297,7 +236,7 @@
           </div>
           <?php endif; ?>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-xs-12">
           <div class="price-card-group">
             <div class="price-card">
               <div class="price-card-title">
@@ -390,17 +329,5 @@
     <?php print render($page['footer']); ?>
   </footer>
 <?php endif; ?>
-<footer class="footer <?php print $container_class; ?>">
-  <div class="col-lg-6">
-    <?php if ($logo): ?>
-      <a class="logo navbar-btn" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="image-responsive"/>
-      </a>
-    <?php endif; ?>
-  </div>
-  <div class="col-lg-6">
-    <?php if (!empty($page['footer_right'])): ?>
-      <?php print render($page['footer_right']); ?>
-    <?php endif; ?>
-  </div>
-</footer>
+
+<?php include "footer.inc"; ?>

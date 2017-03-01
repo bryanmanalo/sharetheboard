@@ -29,3 +29,15 @@ function search_helper_page_alter(&$page) {
     drupal_set_title("Results for '" . $search_key . "'");
   }
 }
+
+
+/**
+ * Implements hook_user_update().
+ */
+function search_helper_user_update(&$edit, $account, $category) {
+
+  //update board game index for changes in user pickup location
+  $searchHelper = new SearchHelper($account);
+  $searchHelper->updateBoardGameIndexWhenUserUpdates();
+
+}

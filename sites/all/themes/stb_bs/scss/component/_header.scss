@@ -2,9 +2,26 @@
   background-color: #ffffff;
   border: none;
 
+  @media (max-width: $screen-xs-max) {
+    .navbar-collapse.collapse{
+      display:block;
+    }
+  }
+
   .logo-container {
     border-right: 2px solid $gray;
+    margin:auto;
 
+    img{
+      margin:auto;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    .vcenter {
+      display:block;
+      border:none;
+    }
   }
 
   .search {
@@ -13,9 +30,19 @@
     input[type="text"] {
       font-size: $font-size-h3;
 
+      @media (max-width: $screen-md-max) {
+        font-size: $font-size-h5
+      }
+
     }
 
 
+  }
+
+  @media (max-width: $screen-xs-max) {
+    .search {
+      margin:auto;
+    }
   }
 
   #block-fboauth-login{

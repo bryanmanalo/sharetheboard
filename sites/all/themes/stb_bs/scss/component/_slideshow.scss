@@ -37,5 +37,20 @@
       }
 
     }
+
+    @media (max-width: $screen-xs-max) {
+      .views-field-nothing {
+        display:none;
+      }
+    }
+
+    @media (min-width: $screen-lg-desktop) {
+      .views-field-nothing {
+        position: absolute;
+        left:500px;
+        top:60px;
+        max-width:450px;
+      }
+    }
   }
 }

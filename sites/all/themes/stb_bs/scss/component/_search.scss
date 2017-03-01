@@ -4,6 +4,10 @@
     #edit-search-api-views-fulltext-wrapper{
       width: 75%;
 
+      @media (max-width: $screen-xs-max ) {
+        width: 100%;
+      }
+
       input#edit-search-api-views-fulltext {
         outline:none;
         border: 1px solid $gray-lighter;
@@ -24,7 +28,7 @@
     }
 
     .views-submit-button {
-      margin-left:-10px;
+
       #edit-submit-board-game-search-page {
         margin-top:0px;
         float:left;
@@ -37,9 +41,17 @@
   .yui3-u.range-box{
     float:left;
   }
+
   input.form-submit{
     float:left;
   }
+
+  @media (min-width: $screen-md-min){
+    input.form-submit{
+      float:none;
+    }
+  }
+
   input[type="text"].form-control{
     width:70px;
   }
