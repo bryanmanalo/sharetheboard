@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d513f60-52a0-46cf-9c4d-67744a3bf520" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/CHANGELOG.txt" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/CHANGELOG.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/LICENSE.txt" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/LICENSE.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/README.txt" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/README.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/fboauth.api.php" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/fboauth.api.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/fboauth.info" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/fboauth.info" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/fboauth.install" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/fboauth.install" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/fboauth.module" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/fboauth.module" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/fboauth_popup.js" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/fboauth_popup.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/includes/fboauth.fboauth.inc" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.fboauth.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/includes/fboauth.field.inc" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.field.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/includes/fboauth.pages.inc" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.pages.inc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/includes/fboauth.profile.inc" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.profile.inc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.fboauth.inc" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.fboauth.inc" />
     </list>
     <ignored path="public_html.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,15 +87,15 @@
       <file leaf-file-name="fboauth.fboauth.inc" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.fboauth.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="239" column="64" selection-start-line="239" selection-start-column="64" selection-end-line="239" selection-end-column="64" />
+            <state relative-caret-position="34">
+              <caret line="205" column="50" selection-start-line="205" selection-start-column="50" selection-end-line="205" selection-end-column="50" />
               <folding>
-                <marker date="1488465663073" expanded="true" signature="3563:3841" ph="..." />
-                <marker date="1488465663073" expanded="true" signature="3574:3829" ph="..." />
-                <marker date="1488465663073" expanded="true" signature="3614:3817" ph="..." />
-                <marker date="1488465663073" expanded="true" signature="3641:3747" ph="{...}" />
-                <marker date="1488465663073" expanded="true" signature="3759:3802" ph="{...}" />
-                <marker date="1488465663073" expanded="true" signature="12960:13002" ph="SELECT uid F... " />
+                <marker date="1488466066473" expanded="true" signature="3563:3841" ph="..." />
+                <marker date="1488466066473" expanded="true" signature="3574:3829" ph="..." />
+                <marker date="1488466066473" expanded="true" signature="3614:3817" ph="..." />
+                <marker date="1488466066473" expanded="true" signature="3641:3747" ph="{...}" />
+                <marker date="1488466066473" expanded="true" signature="3759:3802" ph="{...}" />
+                <marker date="1488466066473" expanded="true" signature="12996:13038" ph="SELECT uid F... " />
               </folding>
             </state>
           </provider>
@@ -579,12 +567,12 @@
       <workItem from="1488335599677" duration="940000" />
       <workItem from="1488371168430" duration="1558000" />
       <workItem from="1488426929454" duration="834000" />
-      <workItem from="1488464298045" duration="1370000" />
+      <workItem from="1488464298045" duration="1793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261314000" />
+    <option name="totallyTimeSpent" value="261737000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1007,15 +995,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.fboauth.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="239" column="64" selection-start-line="239" selection-start-column="64" selection-end-line="239" selection-end-column="64" />
+        <state relative-caret-position="34">
+          <caret line="205" column="50" selection-start-line="205" selection-start-column="50" selection-end-line="205" selection-end-column="50" />
           <folding>
-            <marker date="1488465663073" expanded="true" signature="3563:3841" ph="..." />
-            <marker date="1488465663073" expanded="true" signature="3574:3829" ph="..." />
-            <marker date="1488465663073" expanded="true" signature="3614:3817" ph="..." />
-            <marker date="1488465663073" expanded="true" signature="3641:3747" ph="{...}" />
-            <marker date="1488465663073" expanded="true" signature="3759:3802" ph="{...}" />
-            <marker date="1488465663073" expanded="true" signature="12960:13002" ph="SELECT uid F... " />
+            <marker date="1488466066473" expanded="true" signature="3563:3841" ph="..." />
+            <marker date="1488466066473" expanded="true" signature="3574:3829" ph="..." />
+            <marker date="1488466066473" expanded="true" signature="3614:3817" ph="..." />
+            <marker date="1488466066473" expanded="true" signature="3641:3747" ph="{...}" />
+            <marker date="1488466066473" expanded="true" signature="3759:3802" ph="{...}" />
+            <marker date="1488466066473" expanded="true" signature="12996:13038" ph="SELECT uid F... " />
           </folding>
         </state>
       </provider>
