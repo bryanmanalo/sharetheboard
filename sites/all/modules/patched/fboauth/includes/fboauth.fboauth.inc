@@ -202,7 +202,7 @@ function fboauth_action_connect($app_id, $access_token) {
           }
         }
         // Register a new user only if allowed.
-        else (variable_get('user_register', 0) == 0) {
+        elseif (variable_get('user_register', 0) == 0) {
           $account = fboauth_create_user($fbuser);
 
           if (!isset($account) || empty($account)) {

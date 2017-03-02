@@ -87,15 +87,15 @@
       <file leaf-file-name="fboauth.fboauth.inc" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.fboauth.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="205" column="50" selection-start-line="205" selection-start-column="50" selection-end-line="205" selection-end-column="50" />
+            <state relative-caret-position="51">
+              <caret line="204" column="14" selection-start-line="204" selection-start-column="14" selection-end-line="204" selection-end-column="14" />
               <folding>
-                <marker date="1488466066473" expanded="true" signature="3563:3841" ph="..." />
-                <marker date="1488466066473" expanded="true" signature="3574:3829" ph="..." />
-                <marker date="1488466066473" expanded="true" signature="3614:3817" ph="..." />
-                <marker date="1488466066473" expanded="true" signature="3641:3747" ph="{...}" />
-                <marker date="1488466066473" expanded="true" signature="3759:3802" ph="{...}" />
-                <marker date="1488466066473" expanded="true" signature="12996:13038" ph="SELECT uid F... " />
+                <marker date="1488466268079" expanded="true" signature="3563:3841" ph="..." />
+                <marker date="1488466268079" expanded="true" signature="3574:3829" ph="..." />
+                <marker date="1488466268079" expanded="true" signature="3614:3817" ph="..." />
+                <marker date="1488466268079" expanded="true" signature="3641:3747" ph="{...}" />
+                <marker date="1488466268079" expanded="true" signature="3759:3802" ph="{...}" />
+                <marker date="1488466268079" expanded="true" signature="12998:13040" ph="SELECT uid F... " />
               </folding>
             </state>
           </provider>
@@ -567,12 +567,12 @@
       <workItem from="1488335599677" duration="940000" />
       <workItem from="1488371168430" duration="1558000" />
       <workItem from="1488426929454" duration="834000" />
-      <workItem from="1488464298045" duration="1793000" />
+      <workItem from="1488464298045" duration="1970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261737000" />
+    <option name="totallyTimeSpent" value="261914000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -995,15 +995,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.fboauth.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="205" column="50" selection-start-line="205" selection-start-column="50" selection-end-line="205" selection-end-column="50" />
+        <state relative-caret-position="51">
+          <caret line="204" column="14" selection-start-line="204" selection-start-column="14" selection-end-line="204" selection-end-column="14" />
           <folding>
-            <marker date="1488466066473" expanded="true" signature="3563:3841" ph="..." />
-            <marker date="1488466066473" expanded="true" signature="3574:3829" ph="..." />
-            <marker date="1488466066473" expanded="true" signature="3614:3817" ph="..." />
-            <marker date="1488466066473" expanded="true" signature="3641:3747" ph="{...}" />
-            <marker date="1488466066473" expanded="true" signature="3759:3802" ph="{...}" />
-            <marker date="1488466066473" expanded="true" signature="12996:13038" ph="SELECT uid F... " />
+            <marker date="1488466268079" expanded="true" signature="3563:3841" ph="..." />
+            <marker date="1488466268079" expanded="true" signature="3574:3829" ph="..." />
+            <marker date="1488466268079" expanded="true" signature="3614:3817" ph="..." />
+            <marker date="1488466268079" expanded="true" signature="3641:3747" ph="{...}" />
+            <marker date="1488466268079" expanded="true" signature="3759:3802" ph="{...}" />
+            <marker date="1488466268079" expanded="true" signature="12998:13040" ph="SELECT uid F... " />
           </folding>
         </state>
       </provider>
