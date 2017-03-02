@@ -202,7 +202,7 @@ function fboauth_action_connect($app_id, $access_token) {
           }
         }
         // Register a new user only if allowed.
-        elseif (variable_get('user_register', 1)) {
+        else {
           $account = fboauth_create_user($fbuser);
 
           if (!isset($account) || empty($account)) {
@@ -236,12 +236,12 @@ function fboauth_action_connect($app_id, $access_token) {
           // If the login fails, fboauth_login_user() throws an error message.
         }
         // Since user's can't create new accounts on their own, show an error.
-        else {
+        /*else {
           drupal_set_message(t('Your Facebook e-mail address does not match 
             any existing accounts. If you have an account, you must first 
             log in before you can connect your account to Facebook. 
             Creation of new accounts on this site is disabled.'));
-        }
+        }*/
       }
       // Email not provided by Facebook.
       else {

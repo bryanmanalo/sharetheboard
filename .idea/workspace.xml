@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d513f60-52a0-46cf-9c4d-67744a3bf520" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/stb_bs/.sass-cache/a0884ee196f5761cab2017fcfe1037ef9802302b/_board-game.scssc" afterPath="$PROJECT_DIR$/sites/all/themes/stb_bs/.sass-cache/a0884ee196f5761cab2017fcfe1037ef9802302b/_board-game.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/stb_bs/.sass-cache/a0884ee196f5761cab2017fcfe1037ef9802302b/_header.scssc" afterPath="$PROJECT_DIR$/sites/all/themes/stb_bs/.sass-cache/a0884ee196f5761cab2017fcfe1037ef9802302b/_header.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/stb_bs/.sass-cache/a0884ee196f5761cab2017fcfe1037ef9802302b/_search.scssc" afterPath="$PROJECT_DIR$/sites/all/themes/stb_bs/.sass-cache/a0884ee196f5761cab2017fcfe1037ef9802302b/_search.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/stb_bs/.sass-cache/a0884ee196f5761cab2017fcfe1037ef9802302b/_slideshow.scssc" afterPath="$PROJECT_DIR$/sites/all/themes/stb_bs/.sass-cache/a0884ee196f5761cab2017fcfe1037ef9802302b/_slideshow.scssc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/CHANGELOG.txt" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/CHANGELOG.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/LICENSE.txt" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/LICENSE.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/README.txt" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/README.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/fboauth.api.php" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/fboauth.api.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/fboauth.info" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/fboauth.info" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/fboauth.install" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/fboauth.install" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/fboauth.module" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/fboauth.module" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/fboauth_popup.js" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/fboauth_popup.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/includes/fboauth.fboauth.inc" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.fboauth.inc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/includes/fboauth.field.inc" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.field.inc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/includes/fboauth.pages.inc" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.pages.inc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/includes/fboauth.profile.inc" afterPath="$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.profile.inc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/search_helper/search_helper.info" afterPath="$PROJECT_DIR$/sites/all/modules/custom/search_helper/search_helper.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/search_helper/search_helper.module" afterPath="$PROJECT_DIR$/sites/all/modules/custom/search_helper/search_helper.module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/stb_bs/css/style.css" afterPath="$PROJECT_DIR$/sites/all/themes/stb_bs/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/stb_bs/scss/component/_board-game.scss" afterPath="$PROJECT_DIR$/sites/all/themes/stb_bs/scss/component/_board-game.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/stb_bs/scss/component/_header.scss" afterPath="$PROJECT_DIR$/sites/all/themes/stb_bs/scss/component/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/stb_bs/scss/component/_search.scss" afterPath="$PROJECT_DIR$/sites/all/themes/stb_bs/scss/component/_search.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/stb_bs/scss/component/_slideshow.scss" afterPath="$PROJECT_DIR$/sites/all/themes/stb_bs/scss/component/_slideshow.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/stb_bs/templates/page--node--board_game.tpl.php" afterPath="$PROJECT_DIR$/sites/all/themes/stb_bs/templates/page--node--board_game.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/stb_bs/templates/page.tpl.php" afterPath="$PROJECT_DIR$/sites/all/themes/stb_bs/templates/page.tpl.php" />
     </list>
     <ignored path="public_html.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,16 +38,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="page--node--board_game.tpl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/stb_bs/templates/page--node--board_game.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2822">
-              <caret line="238" column="11" selection-start-line="238" selection-start-column="11" selection-end-line="238" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="facetapi.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/facetapi/facetapi.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.module" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.module" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/views/views.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
+            <state relative-caret-position="30583">
               <caret line="1806" column="3" selection-start-line="1806" selection-start-column="3" selection-end-line="1806" selection-end-column="3" />
               <folding>
                 <marker date="1487783715000" expanded="true" signature="54424:54498" ph="SELECT * FRO... " />
@@ -71,8 +60,76 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_geolocation.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/stb_bs/scss/component/_geolocation.scss">
+      <file leaf-file-name="user_helper.info" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/user_helper/user_helper.info">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fblogin_helper.module" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/fblogin_helper/fblogin_helper.module">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+              <folding>
+                <marker date="1487468527336" expanded="true" signature="2001:2007" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fboauth.module" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/patched/fboauth/fboauth.module">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="59">
+              <caret line="234" column="9" selection-start-line="234" selection-start-column="9" selection-end-line="234" selection-end-column="9" />
+              <folding>
+                <marker date="1450556810000" expanded="true" signature="8489:8538" ph="SELECT fbid " />
+                <marker date="1450556810000" expanded="true" signature="8744:8794" ph="SELECT uid F... " />
+                <marker date="1450556810000" expanded="true" signature="9159:9203" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fboauth.fboauth.inc" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.fboauth.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="239" column="64" selection-start-line="239" selection-start-column="64" selection-end-line="239" selection-end-column="64" />
+              <folding>
+                <marker date="1488465663073" expanded="true" signature="3563:3841" ph="..." />
+                <marker date="1488465663073" expanded="true" signature="3574:3829" ph="..." />
+                <marker date="1488465663073" expanded="true" signature="3614:3817" ph="..." />
+                <marker date="1488465663073" expanded="true" signature="3641:3747" ph="{...}" />
+                <marker date="1488465663073" expanded="true" signature="3759:3802" ph="{...}" />
+                <marker date="1488465663073" expanded="true" signature="12960:13002" ph="SELECT uid F... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/bootstrap.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="1204" column="9" selection-start-line="1204" selection-start-column="9" selection-end-line="1204" selection-end-column="9" />
+              <folding>
+                <marker date="1481151103000" expanded="true" signature="28807:28872" ph="SELECT filen... " />
+                <marker date="1481151103000" expanded="true" signature="41354:41388" ph="SELECT name,... " />
+                <marker date="1481151103000" expanded="true" signature="77028:77070" ph="SELECT 1 FRO... " />
+                <marker date="1481151103000" expanded="true" signature="106467:106522" ph="SELECT * FRO... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fboauth.field.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.field.inc">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -81,61 +138,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_util.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/stb_bs/scss/component/_util.scss">
+      <file leaf-file-name="fboauth.pages.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.pages.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="-3626">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search-api-ranges-block-slider-view-form.tpl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/stb_bs/templates/search-api-ranges-block-slider-view-form.tpl.php">
+      <file leaf-file-name="fboauth.profile.inc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.profile.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/stb_bs/scss/component/_header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_board-game.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/stb_bs/scss/component/_board-game.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.tpl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/stb_bs/templates/page.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_search.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/stb_bs/scss/component/_search.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+            <state relative-caret-position="-1178">
+              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -149,8 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sites/all/modules/contrib/search_api_ranges/search_api_ranges.module" />
-        <option value="$PROJECT_DIR$/sites/all/themes/stb_bs/templates/views-view-fields--board-game-search-page--page.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/stb_bs/bootstrap/assets/stylesheets/bootstrap/_variables.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/stb_bs/scss/_default-variables.scss" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/search_helper/js/search_helper.js" />
@@ -200,6 +215,8 @@
         <option value="$PROJECT_DIR$/sites/all/themes/stb_bs/templates/page--node--board_game.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/modules/contrib/facetapi/facetapi.js" />
         <option value="$PROJECT_DIR$/sites/all/modules/contrib/views/views.module" />
+        <option value="$PROJECT_DIR$/sites/all/modules/contrib/fboauth/includes/fboauth.fboauth.inc" />
+        <option value="$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.fboauth.inc" />
       </list>
     </option>
   </component>
@@ -250,6 +267,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -322,41 +341,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stb_bs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
+              <option name="myItemId" value="patched" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stb_bs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="geolocation_googlemaps" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -378,15 +371,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stb_bs" />
+              <option name="myItemId" value="patched" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
+              <option name="myItemId" value="fboauth" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -408,19 +401,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stb_bs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -444,8 +425,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -457,18 +436,18 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../global/public_html" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Files_Bryan\websites\sharetheboard\public_html\sites\all\modules\patched" />
+      <recent name="C:\Files_Bryan\websites\sharetheboard\public_html\sites\all\modules\custom\user_helper\includes" />
+      <recent name="C:\Files_Bryan\websites\sharetheboard\public_html\sites\all\modules\custom\board_game_helper\js" />
+      <recent name="C:\Files_Bryan\websites\sharetheboard\public_html\sites\all\themes\stb_bs\templates" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Files_Bryan\websites\sharetheboard\public_html\sites\all\themes\stb_bs\images" />
       <recent name="C:\Files_Bryan\websites\sharetheboard\public_html\sites\all\themes\stb_bs\templates" />
       <recent name="C:\Files_Bryan\websites\sharetheboard\public_html\sites\all\modules\custom\user_helper\js" />
       <recent name="C:\Files_Bryan\websites\sharetheboard\public_html\sites\all\modules\custom\board_game_helper" />
       <recent name="C:\Files_Bryan\websites\sharetheboard\public_html\sites\all\modules\custom\search_helper" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Files_Bryan\websites\sharetheboard\public_html\sites\all\modules\patched" />
-      <recent name="C:\Files_Bryan\websites\sharetheboard\public_html\sites\all\modules\custom\user_helper\includes" />
-      <recent name="C:\Files_Bryan\websites\sharetheboard\public_html\sites\all\modules\custom\board_game_helper\js" />
-      <recent name="C:\Files_Bryan\websites\sharetheboard\public_html\sites\all\themes\stb_bs\templates" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.public_html">
@@ -598,12 +577,14 @@
       <workItem from="1488286495097" duration="3102000" />
       <workItem from="1488291266456" duration="9940000" />
       <workItem from="1488335599677" duration="940000" />
-      <workItem from="1488371168430" duration="962000" />
+      <workItem from="1488371168430" duration="1558000" />
+      <workItem from="1488426929454" duration="834000" />
+      <workItem from="1488464298045" duration="1370000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258514000" />
+    <option name="totallyTimeSpent" value="261314000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -618,10 +599,11 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2596401" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3200514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33378196" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.51285344" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33109018" sideWeight="0.48714653" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -632,7 +614,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33109018" sideWeight="0.48714653" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -661,55 +642,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/board_game_helper/board_game_helper.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/user_helper/includes/UserHelper.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/board_game_helper/includes/BoardGameHelperUtil.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/views/theme/views-view-field.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="29" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/stb_bs/templates/views-view-field--field-rent.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="26" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/stb_bs/templates/views-view-field--field-selling-price.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/views/theme/views-exposed-form.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/stb_bs/templates/stb-bs-board-game-form.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -827,13 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/fblogin_helper/fblogin_helper.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/search_helper/includes/SearchHelper.inc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -915,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,7 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1008,10 +930,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/views/views.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
+        <state relative-caret-position="30583">
           <caret line="1806" column="3" selection-start-line="1806" selection-start-column="3" selection-end-line="1806" selection-end-column="3" />
           <folding>
             <marker date="1487783715000" expanded="true" signature="54424:54498" ph="SELECT * FRO... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/user_helper/user_helper.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/fblogin_helper/fblogin_helper.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <marker date="1487468527336" expanded="true" signature="2001:2007" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.field.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.profile.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1178">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.pages.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3626">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/patched/fboauth/fboauth.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="234" column="9" selection-start-line="234" selection-start-column="9" selection-end-line="234" selection-end-column="9" />
+          <folding>
+            <marker date="1450556810000" expanded="true" signature="8489:8538" ph="SELECT fbid " />
+            <marker date="1450556810000" expanded="true" signature="8744:8794" ph="SELECT uid F... " />
+            <marker date="1450556810000" expanded="true" signature="9159:9203" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/bootstrap.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="1204" column="9" selection-start-line="1204" selection-start-column="9" selection-end-line="1204" selection-end-column="9" />
+          <folding>
+            <marker date="1481151103000" expanded="true" signature="28807:28872" ph="SELECT filen... " />
+            <marker date="1481151103000" expanded="true" signature="41354:41388" ph="SELECT name,... " />
+            <marker date="1481151103000" expanded="true" signature="77028:77070" ph="SELECT 1 FRO... " />
+            <marker date="1481151103000" expanded="true" signature="106467:106522" ph="SELECT * FRO... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/patched/fboauth/includes/fboauth.fboauth.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="239" column="64" selection-start-line="239" selection-start-column="64" selection-end-line="239" selection-end-column="64" />
+          <folding>
+            <marker date="1488465663073" expanded="true" signature="3563:3841" ph="..." />
+            <marker date="1488465663073" expanded="true" signature="3574:3829" ph="..." />
+            <marker date="1488465663073" expanded="true" signature="3614:3817" ph="..." />
+            <marker date="1488465663073" expanded="true" signature="3641:3747" ph="{...}" />
+            <marker date="1488465663073" expanded="true" signature="3759:3802" ph="{...}" />
+            <marker date="1488465663073" expanded="true" signature="12960:13002" ph="SELECT uid F... " />
           </folding>
         </state>
       </provider>
