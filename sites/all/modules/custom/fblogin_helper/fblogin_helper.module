@@ -1,5 +1,20 @@
 <?php
 
+
+
+/**
+ * Implements hook_menu_alter().
+ */
+function fblogin_helper_menu_alter(&$items) {
+  //Allow visitors to register using fb access, but prevent usage of the page against manual registration
+  $items['user/register']['access callback'] = FALSE;
+  $items['user/password']['access callback'] = FALSE;
+}
+
+
+
+
+
 /**
  * Implements hook_user_presave().
  */
