@@ -21,21 +21,21 @@ class BoardGameHelper {
   }
 
   function isForSale(){
-    return $this->availabilityAs('Sale');
+    return $this->availabilityAs(9);
   }
 
   function isForRent(){
-    return $this->availabilityAs('Rent');
+    return $this->availabilityAs(3);
   }
 
   function isForSwap(){
-    return $this->availabilityAs('Swap');
+    return $this->availabilityAs(2);
   }
 
-  private function availabilityAs($name){
+  private function availabilityAs($tid){
     $found = FALSE;
     foreach($this->boardGameWrapper->field_available_as->value() as $tax){
-      if($tax->name == $name){
+      if($tax->tid == $tid){
         $found = TRUE;
         break;
       }
