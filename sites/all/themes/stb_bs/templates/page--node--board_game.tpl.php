@@ -301,7 +301,7 @@
             <?php if($for_swap): ?>
             <div class="price-card">
               <div class="price-card-title">
-                <div class="price-card-type">For Swap</div>
+                <div class="price-card-type">For Weekend Swap</div>
               </div>
               <div class="price-card-body">
                 <?php if(isset($for_swap_terms)): ?>
