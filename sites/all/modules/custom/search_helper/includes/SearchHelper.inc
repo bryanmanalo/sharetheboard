@@ -27,6 +27,10 @@ class SearchHelper {
       $nids = NULL;
     }
 
-    search_api_track_item_change('node', $nids);
+    if($nids != NULL && sizeof($nids)){
+      search_api_track_item_change('node', $nids);
+    }
+
+
   }
 }

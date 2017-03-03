@@ -6,21 +6,30 @@
  * Implements hook_menu_alter().
  */
 function fblogin_helper_menu_alter(&$items) {
-  //Allow visitors to register using fb access, but prevent usage of the page against manual registration
+  //Allow visitors to register using fb access, but prevent usage of the page against manual registration.  This will work if allow visitors to register is enable in the account settings
   $items['user/register']['access callback'] = FALSE;
   $items['user/password']['access callback'] = FALSE;
 }
 
 
-
+/**
+ * Implements hook_user_presave().
+ */
+function fblogin_helper_user_presave(&$edit, $account, $category) {
+  if((!isset($edit['fboauth']) || !$edit['fboauth']) && $account->is_new){
+    drupal_access_denied();
+    drupal_set_message(t('You can only register via Facebook'), 'error', TRUE);
+    drupal_exit();
+  }
+}
 
 
 /**
  * Implements hook_user_presave().
  */
 function fblogin_helper_fboauth_user_presave(&$edit, $fbuser) {
-  $pass = _fblogin_helper_genpass();
   if(!array_key_exists('pass', $edit)){
+    $pass = _fblogin_helper_genpass();
     $edit['pass'] = $pass;
   }
 }
@@ -70,4 +79,17 @@ function fblogin_helper_fboauth_action__connect($variables) {
   $title = isset($link['title']) ? check_plain($link['title']) : '';
   $src = ($GLOBALS['is_https'] ? 'https' : 'http') . '://www.facebook.com/images/fbconnect/login-buttons/connect_light_medium_short.gif';
   return '<span>Log in/Sign up&nbsp;</span><a ' . $attributes . ' href="' . $url . '"><img src="' . $src . '" alt="' . $title . '" /></a>';
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function fblogin_helper_form_alter(&$form, &$form_state, $form_id) {
+  if($form_id ==  'user_profile_form'){
+    $form['account']['name']['#disabled'] = TRUE;
+    $form['account']['pass']['#disabled'] = TRUE;
+    $form['account']['current_pass']['#disabled'] = TRUE;
+    $form['account']['current_pass_required_values']['#disabled'] = TRUE;
+    $form['account']['mail']['#disabled'] = TRUE;
+  }
 }
