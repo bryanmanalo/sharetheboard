@@ -23,7 +23,6 @@
  */
 ?>
 <?php
-  dpm($row);
   $bgHelper = new BoardGameHelper($row->_entity_properties['entity object']);
   if($bgHelper->isForSale() || $bgHelper->isForRent()){
     print "For " . $row->_entity_properties['field_available_as:name'] . ': P ' . number_format($bgHelper->getSearchPrice(), 2);
