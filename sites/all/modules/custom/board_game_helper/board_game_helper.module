@@ -52,6 +52,8 @@ function board_game_helper_preprocess_page(&$vars){
       $vars['number_players_to'] = $bg->getBoardGameWrapper()->field_number_players->value()['to'];
       $vars['game_pieces'] = $bg->getBoardGameWrapper()->field_game_pieces->value()['value'];
       $vars['game_owner']->contact_number = $bg->getGameOwnerHelper()->getUserWrapper()->field_contact_number->value();
+      dpm($bg->getGameOwnerHelper()->hasPickupLocation(), 'has pickup loaction');
+      $vars['has_pickup_location'] = $bg->getGameOwnerHelper()->hasPickupLocation();
 
       $block = module_invoke('views','block_view','pickup_locations_map-block');
       $vars['game_owner']->pickup_location = render($block['content']);

@@ -216,17 +216,17 @@
                 <strong>Contact Number:</strong>
                 <span><?php print check_plain($game_owner->contact_number); ?></span>
               </div>
+              <div class="clearfix"></div>
               <?php endif; ?>
               <?php if(!empty($game_owner->location_city)): ?>
                 <div>
                   <strong>Pickup Location City:</strong>
                   <span><?php print check_plain($game_owner->location_city); ?></span>
                 </div>
+                <div class="clearfix"></div>
               <?php endif; ?>
-              <?php if(isset($game_owner->pickup_location)): ?>
+              <?php if(!empty($hsa_pickup_location)): ?>
                 <div>
-                  <div class="cleafix"></div>
-                  <br />
                   <div>
                     <?php print $game_owner->pickup_location; ?>
                   </div>

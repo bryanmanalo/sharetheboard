@@ -35,6 +35,11 @@ class UserHelper{
     return $location;
   }
 
+  function hasPickupLocation(){
+    //dpm($this->userWrapper->field_pickup_locations->value());
+    return sizeof($this->userWrapper->field_pickup_locations->value()) > 0;
+  }
+
   function getFBId(){
     return isset($this->user->fbid) ? $this->user->fbid : '';
   }

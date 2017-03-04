@@ -12,6 +12,8 @@ class BoardGameHelper {
     $this->gameOwnerHelper = new UserHelper($gameOwner);
   }
 
+
+
   function getBoardGameWrapper(){
     return $this->boardGameWrapper;
   }
