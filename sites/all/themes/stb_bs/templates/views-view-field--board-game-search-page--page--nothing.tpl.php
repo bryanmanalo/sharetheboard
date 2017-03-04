@@ -23,7 +23,11 @@
  */
 ?>
 <?php
-if(is_numeric($output)){
-  print "P" . number_format($output,2,".",",");
-}
+  dpm($row);
+  $bgHelper = new BoardGameHelper($row->_entity_properties['entity object']);
+  if($bgHelper->isForSale() || $bgHelper->isForRent()){
+    print "For " . $row->_entity_properties['field_available_as:name'] . ': P ' . number_format($bgHelper->getSearchPrice(), 2);
+  }else{
+    print "For " . $row->_entity_properties['field_available_as:name'];
+  }
 ?>

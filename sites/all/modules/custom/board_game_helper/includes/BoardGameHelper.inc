@@ -32,6 +32,16 @@ class BoardGameHelper {
     return $this->availabilityAs(2);
   }
 
+  function getSearchPrice(){
+    $search_price = NULL;
+    if($this->isForSale() && isset($this->boardGameWrapper->field_selling_price)){
+      $search_price = $this->boardGameWrapper->field_selling_price->value();
+    }else if($this->isForRent() && $this->boardGameWrapper->field_rent){
+      $search_price = $this->boardGameWrapper->field_rent->value();
+    }
+    return $search_price;
+  }
+
   private function availabilityAs($tid){
     $found = FALSE;
     foreach($this->boardGameWrapper->field_available_as->value() as $tax){

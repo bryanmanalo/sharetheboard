@@ -9982,6 +9982,12 @@ ul#superfish-1 li {
   font-size: 18px;
   font-weight: bold;
 }
+/* line 92, ../scss/component/_search.scss */
+.view-id-board_game_search_page .row .col .search-card .views-field-nothing {
+  color: #660079;
+  font-size: 18px;
+  font-weight: bold;
+}
 
 /* line 4, ../scss/component/_slideshow.scss */
 .view-id-home_slideshow .views-bootstrap-carousel-plugin-style .item .views-field-field-image div.field-content img {
