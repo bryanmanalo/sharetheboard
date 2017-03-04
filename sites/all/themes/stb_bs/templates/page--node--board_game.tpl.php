@@ -269,7 +269,7 @@
             <?php if($for_sale): ?>
             <div class="price-card">
               <div class="price-card-title">
-                <div class="price-card-price">P<?php print $for_sale_price; ?></div>
+                <div class="price-card-price">P&nbsp;<?php print $for_sale_price; ?></div>
                 <div class="price-card-type">For Sale</div>
               </div>
             </div>
@@ -277,7 +277,7 @@
             <?php if($for_rent): ?>
             <div class="price-card">
               <div class="price-card-title">
-                <div class="price-card-price">P<?php print check_plain($for_rent_price); ?></div>
+                <div class="price-card-price">P&nbsp;<?php print check_plain($for_rent_price); ?></div>
                 <div class="price-card-type">For Rent</div>
               </div>
               <div class="price-card-body">
