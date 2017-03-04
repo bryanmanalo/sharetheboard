@@ -217,7 +217,7 @@
                 <span><?php print check_plain($game_owner->contact_number); ?></span>
               </div>
               <?php endif; ?>
-              <?php if(isset($game_owner->location_city)): ?>
+              <?php if(!empty($game_owner->location_city)): ?>
                 <div>
                   <strong>Pickup Location City:</strong>
                   <span><?php print check_plain($game_owner->location_city); ?></span>
