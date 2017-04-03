@@ -225,7 +225,7 @@
                 </div>
                 <div class="clearfix"></div>
               <?php endif; ?>
-              <?php if(!empty($hsa_pickup_location)): ?>
+              <?php if(!empty($has_pickup_location)): ?>
                 <div>
                   <div>
                     <?php print $game_owner->pickup_location; ?>
